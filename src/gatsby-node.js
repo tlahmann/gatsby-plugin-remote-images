@@ -108,7 +108,7 @@ exports.onCreateNode = async (
       );
     } else {
       const url = getPath(node, imagePath, ext);
-      await createImageNode(url, node, createImageNodeOptions, reporter);
+      await createImageNode(url, node, createImageNodeOptions, reporter, silent);
     }
   }
 };
